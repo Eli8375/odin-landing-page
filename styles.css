@@ -28,8 +28,12 @@ a {
     display: flex;
     background-color: #1F2937;
     color: #F9FAF8;
-    padding: 0 100px;
-    
+    padding: 0 220px;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
 }
 
 .left-links {
@@ -51,7 +55,13 @@ a {
     display: flex;
     background-color: #1F2937;
     color: white;
-    padding: 0 100px;
+    justify-content: center;
+    margin: 50px 0 100px 0;
+}
+
+.body-top img {
+    width: 250px;
+    height: auto;
 }
 
 .body-top-right {
@@ -59,29 +69,58 @@ a {
     padding: 68px;
 }
 
-.body-top .button a {
+.body-top-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+    padding: 30px;
+}
+
+.body-top-item, .body-top-left button {
+    flex: 1;
+}
+
+.body-top-left .button a {
     background-color: #3882F6;
     border-radius: 5px;
     color: white;
     padding: 5px 20px 5px 20px;
+
 }
 
 .body-middle-1 {
     display: flex;
     flex-direction: column;
-    border: 5px dashed black;
-    padding: 100px 100px;
+    padding: 100px 350px;
     align-items: center;
 }
 
-.body-middle-1-title {
+p {
     font-size: 40px;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .body-middle-1-box-group {
     display: flex;
     gap: 40px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box img {
+    width: 150px;
+    height: auto;
+}
+
+.box-word {
+    text-align: center;
 }
 
 .body-middle-2 {
@@ -112,9 +151,17 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
+    padding: 100px
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #3882F6;
     border-radius: 5px;
-    padding: 100px 100px;
+    padding: 10px 100px;
 }
 
 .body-bottom .button a{
@@ -125,13 +172,15 @@ a {
     margin-left: 50px;
 }
 
-.body-bottom-item {
-    background-color: #3882F6;
+.body-bottom-left {
     padding-right: 40px;
-    border-radius: 10px;
-    font-size: 20px;
     color: white;
+}
+
+.body-bottom-left p {
+    font-size: 30px;
     font-weight: bold;
+    margin: 0;
 }
 
 .footer {
